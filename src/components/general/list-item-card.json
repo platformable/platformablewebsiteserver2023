@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_general_list_item_cards",
+  "info": {
+    "displayName": "list_item_card",
+    "icon": "monitor"
+  },
+  "options": {},
+  "attributes": {
+    "list_item_card_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "list_item_card_text": {
+      "type": "text"
+    }
+  }
+}

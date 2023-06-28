@@ -1,0 +1,101 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_title": {
+      "type": "string"
+    },
+    "hero_subtitle": {
+      "type": "text"
+    },
+    "support_open_ecosystems_title": {
+      "type": "text"
+    },
+    "stakeholder_img_1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "stakeholder_img_2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "stakeholder_img_3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "list_item_cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.list-item-card"
+    },
+    "product_cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.list-card-description"
+    },
+    "vertical_description_card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.vertical-description-card"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.testimonials"
+    },
+    "stakeholder_title": {
+      "type": "string"
+    },
+    "hero_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "product_services_title": {
+      "type": "string"
+    },
+    "explore_sectors_title": {
+      "type": "string"
+    },
+    "testimonials_title": {
+      "type": "string"
+    }
+  }
+}

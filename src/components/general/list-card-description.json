@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_general_list_card_descriptions",
+  "info": {
+    "displayName": "list_card_description",
+    "icon": "monitor"
+  },
+  "options": {},
+  "attributes": {
+    "list_card_description_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "list_card_description_product_name": {
+      "type": "string"
+    },
+    "list_card_description_button_text": {
+      "type": "string"
+    },
+    "list_card_description_description": {
+      "type": "text"
+    },
+    "list_card_description_options": {
+      "type": "string"
+    },
+    "list_card_description_is_costumizable": {
+      "type": "boolean"
+    },
+    "list_card_description_options_text": {
+      "type": "text"
+    }
+  }
+}

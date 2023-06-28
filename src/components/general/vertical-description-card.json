@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_general_vertical_description_cards",
+  "info": {
+    "displayName": "vertical_description_card",
+    "icon": "monitor"
+  },
+  "options": {},
+  "attributes": {
+    "vertical_description_card_title": {
+      "type": "string"
+    },
+    "vertical_description_card_text": {
+      "type": "richtext"
+    },
+    "vertical_description_card_button_text": {
+      "type": "string"
+    }
+  }
+}

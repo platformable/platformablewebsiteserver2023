@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_homepage_testimonials",
+  "info": {
+    "displayName": "testimonials",
+    "icon": "monitor"
+  },
+  "options": {},
+  "attributes": {
+    "testimonials_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "testimonials_text": {
+      "type": "richtext"
+    },
+    "testimonials_clientname": {
+      "type": "string"
+    },
+    "testimonials_client_role": {
+      "type": "string"
+    }
+  }
+}

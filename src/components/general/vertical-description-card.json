@@ -2,18 +2,23 @@
   "collectionName": "components_general_vertical_description_cards",
   "info": {
     "displayName": "vertical_description_card",
-    "icon": "monitor"
+    "icon": "monitor",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "vertical_description_card_title": {
       "type": "string"
     },
-    "vertical_description_card_text": {
-      "type": "richtext"
-    },
     "vertical_description_card_button_text": {
       "type": "string"
+    },
+    "vertical_description_card_text": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

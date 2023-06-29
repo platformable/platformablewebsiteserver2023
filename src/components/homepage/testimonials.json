@@ -2,28 +2,34 @@
   "collectionName": "components_homepage_testimonials",
   "info": {
     "displayName": "testimonials",
-    "icon": "monitor"
+    "icon": "monitor",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "testimonials_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "testimonials_text": {
-      "type": "richtext"
+      ]
     },
     "testimonials_clientname": {
       "type": "string"
     },
     "testimonials_client_role": {
       "type": "string"
+    },
+    "testimonials_text": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

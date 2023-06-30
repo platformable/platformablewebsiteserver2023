@@ -21,7 +21,6 @@ globalThis.CKEditorConfig = {
             // styles:``,
             // field:{},
             // editorConfig:{}
-            'fulscreen',
         },
         custom:{
             

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_homepage_sector_values",
+  "info": {
+    "displayName": "sector_values",
+    "icon": "monitor"
+  },
+  "options": {},
+  "attributes": {
+    "sector_value_text": {
+      "type": "string"
+    }
+  }
+}

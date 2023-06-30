@@ -13,12 +13,10 @@
     "vertical_description_card_button_text": {
       "type": "string"
     },
-    "vertical_description_card_text": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbar"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
+    "sector_values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.sector-values"
     }
   }
 }

@@ -62,6 +62,9 @@
       "type": "component",
       "repeatable": true,
       "component": "homepage.testimonials"
+    },
+    "data_product_testimonial_title": {
+      "type": "string"
     }
   }
 }

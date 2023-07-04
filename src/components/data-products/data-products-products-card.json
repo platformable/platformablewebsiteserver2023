@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_data_products_data_products_products_cards",
+  "info": {
+    "displayName": "data_products_products_card",
+    "icon": "monitor"
+  },
+  "options": {},
+  "attributes": {
+    "data_products_product_name": {
+      "type": "string"
+    },
+    "data_products_product_description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "data_products_products_url": {
+      "type": "string"
+    },
+    "data_products_product_price_quarter": {
+      "type": "decimal"
+    },
+    "data_products_product_price_year": {
+      "type": "decimal"
+    }
+  }
+}

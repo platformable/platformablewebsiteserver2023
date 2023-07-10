@@ -2,7 +2,8 @@
   "collectionName": "components_data_products_data_products_products_cards",
   "info": {
     "displayName": "data_products_products_card",
-    "icon": "monitor"
+    "icon": "monitor",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -24,6 +25,11 @@
     },
     "data_products_product_price_year": {
       "type": "decimal"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.testimonials"
     }
   }
 }

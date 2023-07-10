@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "datasets",
+  "info": {
+    "singularName": "dataset",
+    "pluralName": "datasets",
+    "displayName": "dataset",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "datasets_title": {
+      "type": "string"
+    },
+    "datasets_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "datasets_description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "datasets_description2": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "datasets_products_title": {
+      "type": "string"
+    },
+    "datasets_process_title": {
+      "type": "string"
+    },
+    "datasets_testimonial_title": {
+      "type": "string"
+    },
+    "datasets_find_out_more_title": {
+      "type": "string"
+    },
+    "products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "datasets.datasets-pruducts-card"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.testimonials"
+    }
+  }
+}

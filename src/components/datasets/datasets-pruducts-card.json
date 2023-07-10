@@ -1,8 +1,9 @@
 {
   "collectionName": "components_datasets_datasets_pruducts_cards",
   "info": {
-    "displayName": "datasets_pruducts_card",
-    "icon": "monitor"
+    "displayName": "datasets_products_card",
+    "icon": "cast",
+    "description": ""
   },
   "options": {},
   "attributes": {

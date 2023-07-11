@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "data_governances",
+  "collectionName": "api_governances",
   "info": {
-    "singularName": "data-governance",
-    "pluralName": "data-governances",
-    "displayName": "data_governance",
+    "singularName": "api-governance",
+    "pluralName": "api-governances",
+    "displayName": "api governance",
     "description": ""
   },
   "options": {
@@ -12,19 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "dg_title": {
+    "hero_title": {
       "type": "string"
-    },
-    "hero_img": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
     },
     "hero_description": {
       "type": "customField",
@@ -40,20 +29,14 @@
       },
       "customField": "plugin::ckeditor5.CKEditor"
     },
-    "products_title": {
-      "type": "string"
-    },
-    "process_title": {
-      "type": "string"
-    },
-    "process_description": {
+    "hero_description3": {
       "type": "customField",
       "options": {
         "preset": "toolbar"
       },
       "customField": "plugin::ckeditor5.CKEditor"
     },
-    "process_media": {
+    "hero_img": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -64,12 +47,38 @@
         "audios"
       ]
     },
-    "services_description": {
+    "hero_description4": {
       "type": "customField",
       "options": {
         "preset": "toolbar"
       },
       "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data-governance.products"
+    },
+    "our_process_title": {
+      "type": "string"
+    },
+    "process_description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "services_description": {
+      "type": "richtext"
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data-governance.dg-services"
+    },
+    "testimonials_title": {
+      "type": "string"
     },
     "testimonials": {
       "type": "component",
@@ -77,19 +86,6 @@
       "component": "homepage.testimonials"
     },
     "find_out_more_title": {
-      "type": "string"
-    },
-    "services": {
-      "type": "component",
-      "repeatable": true,
-      "component": "data-governance.dg-services"
-    },
-    "products": {
-      "type": "component",
-      "repeatable": true,
-      "component": "data-governance.products"
-    },
-    "testimonials_title": {
       "type": "string"
     }
   }

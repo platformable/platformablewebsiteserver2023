@@ -87,6 +87,9 @@
     },
     "find_out_more_title": {
       "type": "string"
+    },
+    "products_title": {
+      "type": "string"
     }
   }
 }

@@ -69,9 +69,6 @@
       },
       "customField": "plugin::ckeditor5.CKEditor"
     },
-    "services_description": {
-      "type": "richtext"
-    },
     "services": {
       "type": "component",
       "repeatable": true,
@@ -90,6 +87,13 @@
     },
     "products_title": {
       "type": "string"
+    },
+    "services_description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

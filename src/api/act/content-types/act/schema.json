@@ -33,10 +33,14 @@
         "audios"
       ]
     },
-    "hero_description2": {
-      "type": "richtext"
-    },
     "blog_description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "hero_description2": {
       "type": "customField",
       "options": {
         "preset": "toolbar"

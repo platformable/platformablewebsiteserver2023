@@ -1,0 +1,67 @@
+{
+  "kind": "singleType",
+  "collectionName": "engages",
+  "info": {
+    "singularName": "engage",
+    "pluralName": "engages",
+    "displayName": "engage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "subtitle1_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "subtitle1_text": {
+      "type": "string"
+    },
+    "subtitle2_text": {
+      "type": "string"
+    },
+    "subtitle2_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "hero_description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "hero_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "products_title": {
+      "type": "string"
+    }
+  }
+}

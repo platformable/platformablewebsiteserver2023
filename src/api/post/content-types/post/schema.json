@@ -40,15 +40,16 @@
     "is_featured": {
       "type": "boolean"
     },
-    "categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::category.category"
-    },
-    "sector": {
+    "category": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::sector.sector"
+      "target": "api::category.category"
+    },
+    "sectors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sector.sector",
+      "mappedBy": "post"
     }
   }
 }

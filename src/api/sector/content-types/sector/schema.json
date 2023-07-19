@@ -13,12 +13,6 @@
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "post": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::post.post",
-      "inversedBy": "sectors"
     }
   }
 }

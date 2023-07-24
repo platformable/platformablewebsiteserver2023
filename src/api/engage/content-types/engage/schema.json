@@ -15,9 +15,6 @@
     "title": {
       "type": "string"
     },
-    "subtitle": {
-      "type": "string"
-    },
     "subtitle1_img": {
       "type": "media",
       "multiple": false,
@@ -68,6 +65,13 @@
       "type": "string"
     },
     "hero_description_highlighted": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "subtitle": {
       "type": "customField",
       "options": {
         "preset": "toolbar"

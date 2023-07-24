@@ -4,7 +4,8 @@
   "info": {
     "singularName": "engage",
     "pluralName": "engages",
-    "displayName": "engage"
+    "displayName": "engage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,15 @@
       "type": "string"
     },
     "subtitle1_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "subtitle1_text": {
       "type": "string"
@@ -34,14 +36,15 @@
       "type": "string"
     },
     "subtitle2_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "hero_description": {
       "type": "customField",
@@ -51,17 +54,25 @@
       "customField": "plugin::ckeditor5.CKEditor"
     },
     "hero_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "products_title": {
       "type": "string"
+    },
+    "hero_description_highlighted": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

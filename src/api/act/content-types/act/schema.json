@@ -46,6 +46,13 @@
         "preset": "toolbar"
       },
       "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "hero_description_highlighted": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

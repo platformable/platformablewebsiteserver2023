@@ -30,9 +30,6 @@
         "audios"
       ]
     },
-    "ourMission": {
-      "type": "richtext"
-    },
     "ourMission1_text": {
       "type": "text"
     },
@@ -95,16 +92,24 @@
       ]
     },
     "partner_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "partner_description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "ourMission": {
       "type": "customField",
       "options": {
         "preset": "toolbar"

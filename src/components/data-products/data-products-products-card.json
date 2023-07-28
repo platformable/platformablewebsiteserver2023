@@ -25,6 +25,16 @@
     },
     "data_products_product_price_year": {
       "type": "decimal"
+    },
+    "product_icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

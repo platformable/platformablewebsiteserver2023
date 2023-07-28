@@ -65,6 +65,76 @@
     },
     "data_product_testimonial_title": {
       "type": "string"
+    },
+    "hero_description_bottom2": {
+      "type": "text"
+    },
+    "sectors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.find-more"
+    },
+    "our_process_title": {
+      "type": "string"
+    },
+    "our_process_description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "discovery_title": {
+      "type": "string"
+    },
+    "discovery_description": {
+      "type": "text"
+    },
+    "discovery_images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "scope_title": {
+      "type": "string"
+    },
+    "scope_description": {
+      "type": "text"
+    },
+    "scope_img1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "scope_img2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "scope_img3": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

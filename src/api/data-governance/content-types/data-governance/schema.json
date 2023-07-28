@@ -91,6 +91,11 @@
     },
     "testimonials_title": {
       "type": "string"
+    },
+    "sectors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.find-more"
     }
   }
 }

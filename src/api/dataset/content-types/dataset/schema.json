@@ -63,14 +63,20 @@
       "component": "homepage.testimonials"
     },
     "sectors_img": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "sectors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.find-more"
     }
   }
 }

@@ -35,6 +35,16 @@
     },
     "topics_contact_description": {
       "type": "text"
+    },
+    "hero_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

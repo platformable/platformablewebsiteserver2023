@@ -32,6 +32,9 @@
       "type": "component",
       "repeatable": true,
       "component": "data-governance.dg-services"
+    },
+    "topics_contact_description": {
+      "type": "text"
     }
   }
 }

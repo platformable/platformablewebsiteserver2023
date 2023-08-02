@@ -1,0 +1,70 @@
+{
+  "kind": "singleType",
+  "collectionName": "open_ecosystems",
+  "info": {
+    "singularName": "open-ecosystem",
+    "pluralName": "open-ecosystems",
+    "displayName": "Open Ecosystem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "hero_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "hero_description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "solutions": {
+      "displayName": "solutions",
+      "type": "component",
+      "repeatable": true,
+      "component": "open-ecosystems.solutions"
+    },
+    "solutions_title": {
+      "type": "string"
+    },
+    "solutions_description": {
+      "type": "text"
+    },
+    "contact_text": {
+      "type": "text"
+    },
+    "our_process_title": {
+      "type": "string"
+    },
+    "diagram": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sectors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.find-more"
+    }
+  }
+}

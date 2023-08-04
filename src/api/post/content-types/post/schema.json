@@ -52,9 +52,9 @@
     },
     "teams": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::team.team",
-      "mappedBy": "post"
+      "mappedBy": "posts"
     },
     "excerpt": {
       "type": "customField",

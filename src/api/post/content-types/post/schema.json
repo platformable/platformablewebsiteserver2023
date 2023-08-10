@@ -65,6 +65,11 @@
     },
     "Calendly": {
       "type": "boolean"
+    },
+    "footnote": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog.footnotes"
     }
   }
 }

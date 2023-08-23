@@ -21,9 +21,9 @@
     "cateogry": {
       "type": "enumeration",
       "enum": [
-        "understand",
-        "act",
-        "engage"
+        "Understand",
+        "Act",
+        "Engage"
       ]
     },
     "side_of_navigation": {

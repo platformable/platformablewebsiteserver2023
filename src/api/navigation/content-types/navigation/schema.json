@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navigations",
+  "info": {
+    "singularName": "navigation",
+    "pluralName": "navigations",
+    "displayName": "Navigation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "cateogry": {
+      "type": "enumeration",
+      "enum": [
+        "understand",
+        "act",
+        "engage"
+      ]
+    },
+    "side_of_navigation": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ]
+    }
+  }
+}

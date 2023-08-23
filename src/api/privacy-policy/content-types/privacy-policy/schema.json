@@ -4,7 +4,8 @@
   "info": {
     "singularName": "privacy-policy",
     "pluralName": "privacy-policies",
-    "displayName": "Privacy Policy"
+    "displayName": "Privacy Policy",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,13 @@
       "type": "string"
     },
     "content": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "excerpt": {
       "type": "customField",
       "options": {
         "preset": "toolbar"

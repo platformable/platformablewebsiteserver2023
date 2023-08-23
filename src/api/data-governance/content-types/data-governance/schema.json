@@ -96,6 +96,13 @@
       "type": "component",
       "repeatable": true,
       "component": "general.find-more"
+    },
+    "excerpt": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

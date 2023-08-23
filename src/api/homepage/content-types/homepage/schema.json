@@ -96,6 +96,13 @@
     },
     "testimonials_title": {
       "type": "string"
+    },
+    "excerpt": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "understand",
     "pluralName": "understands",
-    "displayName": "understand",
+    "displayName": "Understand",
     "description": ""
   },
   "options": {
@@ -48,6 +48,13 @@
       "customField": "plugin::ckeditor5.CKEditor"
     },
     "hero_description_highlighted": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "excerpt": {
       "type": "customField",
       "options": {
         "preset": "toolbar"

@@ -18,7 +18,7 @@
     "path": {
       "type": "string"
     },
-    "cateogry": {
+    "category": {
       "type": "enumeration",
       "enum": [
         "Understand",

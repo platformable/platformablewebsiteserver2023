@@ -70,6 +70,9 @@
       "type": "component",
       "repeatable": true,
       "component": "blog.footnotes"
+    },
+    "update_date": {
+      "type": "date"
     }
   }
 }

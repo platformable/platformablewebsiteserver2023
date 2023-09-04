@@ -39,6 +39,9 @@
     },
     "btn_download_enabled": {
       "type": "boolean"
+    },
+    "disclaimer": {
+      "type": "text"
     }
   }
 }

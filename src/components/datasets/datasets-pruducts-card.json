@@ -32,6 +32,12 @@
         "videos",
         "audios"
       ]
+    },
+    "btn_download_enabled": {
+      "type": "boolean"
+    },
+    "btn_buy_enabled": {
+      "type": "boolean"
     }
   }
 }

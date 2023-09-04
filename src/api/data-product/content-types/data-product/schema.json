@@ -4,7 +4,7 @@
   "info": {
     "singularName": "data-product",
     "pluralName": "data-products",
-    "displayName": "data_product",
+    "displayName": "Data Product",
     "description": ""
   },
   "options": {
@@ -148,14 +148,15 @@
       "customField": "plugin::ckeditor5.CKEditor"
     },
     "featured_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

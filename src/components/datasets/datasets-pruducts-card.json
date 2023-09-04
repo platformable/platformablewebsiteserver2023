@@ -23,14 +23,24 @@
       "type": "string"
     },
     "product_icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "btn_buy_enabled": {
+      "type": "boolean"
+    },
+    "btn_download_enabled": {
+      "type": "boolean"
+    },
+    "product_enabled": {
+      "type": "boolean"
     }
   }
 }

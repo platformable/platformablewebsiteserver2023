@@ -17,7 +17,7 @@
       },
       "customField": "plugin::ckeditor5.CKEditor"
     },
-    "data_products_products_url": {
+    "data_products_products_sample": {
       "type": "string"
     },
     "data_products_product_price_quarter": {
@@ -42,6 +42,12 @@
     },
     "disclaimer": {
       "type": "text"
+    },
+    "data_product_purchase_quarter": {
+      "type": "string"
+    },
+    "data_product_purchase_year": {
+      "type": "string"
     }
   }
 }

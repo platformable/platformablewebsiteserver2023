@@ -13,7 +13,7 @@
     "datasets_datapoints": {
       "type": "string"
     },
-    "datasets_download": {
+    "datasets_specification": {
       "type": "string"
     },
     "datasets_bulk_download": {

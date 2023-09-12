@@ -73,6 +73,9 @@
     },
     "update_date": {
       "type": "date"
+    },
+    "markdown_content": {
+      "type": "richtext"
     }
   }
 }

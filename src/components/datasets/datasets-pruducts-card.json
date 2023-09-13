@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_datasets_datasets_products_cards",
+  "info": {
+    "displayName": "datasets_products_card",
+    "icon": "cast",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "datasets_product_name": {
+      "type": "string"
+    },
+    "datasets_datapoints": {
+      "type": "string"
+    },
+    "datasets_specification": {
+      "type": "string"
+    },
+    "datasets_bulk_download": {
+      "type": "string"
+    },
+    "datasets_api": {
+      "type": "string"
+    },
+    "product_icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "btn_download_enabled": {
+      "type": "boolean"
+    },
+    "btn_buy_enabled": {
+      "type": "boolean"
+    }
+  }
+}

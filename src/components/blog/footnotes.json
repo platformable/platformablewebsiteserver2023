@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blog_footnotes",
+  "info": {
+    "displayName": "footnotes",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "footnote": {
+      "type": "text"
+    }
+  }
+}

@@ -38,6 +38,12 @@
     },
     "btn_buy_enabled": {
       "type": "boolean"
+    },
+    "plausible_download_tracker": {
+      "type": "string"
+    },
+    "plausible_buy_tracker": {
+      "type": "string"
     }
   }
 }

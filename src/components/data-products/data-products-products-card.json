@@ -48,6 +48,15 @@
     },
     "data_product_purchase_year": {
       "type": "string"
+    },
+    "plausible_download_tracker": {
+      "type": "string"
+    },
+    "plausible_purchase_quarter_tracker": {
+      "type": "string"
+    },
+    "plausible_purchase_year_tracker": {
+      "type": "string"
     }
   }
 }

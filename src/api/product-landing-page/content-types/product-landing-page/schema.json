@@ -60,6 +60,9 @@
       "type": "component",
       "repeatable": true,
       "component": "general.find-more"
+    },
+    "discover_title": {
+      "type": "string"
     }
   }
 }

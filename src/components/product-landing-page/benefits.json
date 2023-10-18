@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_product_landing_page_benefits",
+  "info": {
+    "displayName": "benefits",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "benefit_title": {
+      "type": "string"
+    },
+    "benefit_description": {
+      "type": "text"
+    }
+  }
+}

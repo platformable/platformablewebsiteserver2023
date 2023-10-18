@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_product_landing_page_actionable_information_cards",
+  "info": {
+    "displayName": "actionable_information_card",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

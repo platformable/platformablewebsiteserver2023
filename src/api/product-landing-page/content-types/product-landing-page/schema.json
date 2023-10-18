@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_landing_pages",
+  "info": {
+    "singularName": "product-landing-page",
+    "pluralName": "product-landing-pages",
+    "displayName": "product landing page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_product_name": {
+      "type": "string"
+    },
+    "hero_title": {
+      "type": "string"
+    },
+    "hero_description": {
+      "type": "text"
+    },
+    "hero_images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "buy_button": {
+      "type": "string"
+    },
+    "free_sample_button": {
+      "type": "string"
+    },
+    "actionable_information_title": {
+      "type": "string"
+    },
+    "actionable_information_card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product-landing-page.actionable-information-card"
+    },
+    "discover": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product-landing-page.discover-card"
+    },
+    "products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data-products.data-products-products-card"
+    },
+    "sectors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.find-more"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_general_product_carousels",
+  "info": {
+    "displayName": "product_carousel",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "product_carousel_product_name": {
+      "type": "string"
+    },
+    "product_carousel_title": {
+      "type": "string"
+    },
+    "product_carousel_description": {
+      "type": "text"
+    },
+    "product_carousel_images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "product_carousel_button": {
+      "type": "string"
+    }
+  }
+}

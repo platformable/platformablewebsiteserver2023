@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_product_landing_page_benefits_personas",
+  "info": {
+    "displayName": "benefits_personas",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "persona_title": {
+      "type": "string"
+    },
+    "persona_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "buy_button": {
+      "type": "string"
+    }
+  }
+}

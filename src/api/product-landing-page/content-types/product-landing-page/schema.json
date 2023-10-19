@@ -63,6 +63,32 @@
     },
     "discover_title": {
       "type": "string"
+    },
+    "sector": {
+      "type": "enumeration",
+      "enum": [
+        "Open Banking",
+        "Open Health",
+        "Open Ecosystems"
+      ]
+    },
+    "excerpt": {
+      "type": "text"
+    },
+    "featured_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "hero_product_name"
     }
   }
 }

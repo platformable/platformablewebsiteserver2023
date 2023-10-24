@@ -119,6 +119,15 @@
       "type": "component",
       "repeatable": false,
       "component": "general.product-carousel"
+    },
+    "top_banner_text": {
+      "type": "string"
+    },
+    "top_banner_product": {
+      "type": "string"
+    },
+    "top_banner_button_url": {
+      "type": "string"
     }
   }
 }

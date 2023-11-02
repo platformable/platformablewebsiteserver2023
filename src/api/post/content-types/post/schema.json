@@ -76,6 +76,9 @@
     },
     "markdown_content": {
       "type": "richtext"
+    },
+    "keywords": {
+      "type": "string"
     }
   }
 }

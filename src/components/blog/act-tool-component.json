@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blog_act_tool_components",
+  "info": {
+    "displayName": "Act Tool Component",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "tool": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "how_this_helps": {
+      "type": "text"
+    },
+    "why_we_recommend": {
+      "type": "text"
+    }
+  }
+}

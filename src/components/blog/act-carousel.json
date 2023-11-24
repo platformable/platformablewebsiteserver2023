@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_blog_act_carousels",
+  "info": {
+    "displayName": "act_carousel",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "step1": {
+      "type": "string"
+    },
+    "step1_description": {
+      "type": "text"
+    },
+    "step2": {
+      "type": "string"
+    },
+    "step2_description": {
+      "type": "text"
+    },
+    "step3": {
+      "type": "string"
+    },
+    "step3_description": {
+      "type": "text"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

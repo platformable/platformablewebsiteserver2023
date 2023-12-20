@@ -11,7 +11,7 @@ module.exports = ({ env }) => ({
         actionOptions: {
           upload: {},
           uploadStream: {
-            folder:'/platformablewebsite2023'
+            folder:'/platformablewebsite'
             },
           delete: {},
         },

@@ -19,13 +19,19 @@ module.exports = ({ env }) => ({
     },
     email: {
       config: {
-        provider: 'sendgrid',
+        provider: 'nodemailer',
         providerOptions: {
-          apiKey: env('SENDGRID_API_KEY'),
+          host: 'smtp.gmail.com',
+          port:  587,
+          auth: {
+            user: 'alexei@platformable.com',
+            pass: process.env.NODEMAILERPASSWORD,
+          },
+          // ... any custom nodemailer options
         },
         settings: {
           defaultFrom: 'alexei@platformable.com',
-        defaultReplyTo: 'alexei@platformable.com',
+          defaultReplyTo: 'alexei@platformable.com',
         },
       },
     },

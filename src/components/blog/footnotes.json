@@ -2,12 +2,20 @@
   "collectionName": "components_blog_footnotes",
   "info": {
     "displayName": "footnotes",
-    "icon": "book"
+    "icon": "book",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "footnote": {
-      "type": "text"
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "subheading": {
+      "type": "string"
     }
   }
 }

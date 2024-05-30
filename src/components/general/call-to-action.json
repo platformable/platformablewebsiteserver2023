@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_general_call_to_actions",
+  "info": {
+    "displayName": "callToAction",
+    "icon": "car"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "primaryCallToAction": {
+      "type": "string"
+    },
+    "secondaryCallToAction": {
+      "type": "string"
+    }
+  }
+}

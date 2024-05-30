@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ob_products_pages",
+  "info": {
+    "singularName": "ob-products-page",
+    "pluralName": "ob-products-pages",
+    "displayName": "OB Products Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.hero"
+    },
+    "whatsIncluded": {
+      "displayName": "whatsIncluded",
+      "type": "component",
+      "repeatable": false,
+      "component": "general.whats-included"
+    },
+    "benefitshHeading": {
+      "type": "string"
+    },
+    "bentoBox": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.bento-box"
+    },
+    "personaHeading": {
+      "type": "string"
+    },
+    "personaSubheading": {
+      "type": "string"
+    },
+    "personaCases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.bento-box"
+    },
+    "callToAction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.call-to-action"
+    },
+    "slug": {
+      "type": "uid"
+    }
+  }
+}

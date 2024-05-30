@@ -49,6 +49,11 @@
     },
     "slug": {
       "type": "uid"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.testimonials"
     }
   }
 }

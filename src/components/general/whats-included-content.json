@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_general_whats_included_contents",
+  "info": {
+    "displayName": "whatsIncludedContent",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

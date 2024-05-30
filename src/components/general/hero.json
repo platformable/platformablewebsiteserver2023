@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_general_heroes",
+  "info": {
+    "displayName": "hero",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SeoKeyword": {
+      "type": "string"
+    },
+    "bigHeadline": {
+      "type": "string"
+    },
+    "subHeadline": {
+      "type": "string"
+    },
+    "primaryCallToAction": {
+      "type": "string"
+    },
+    "secondaryCallToAction": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "headingColor": {
+      "type": "string"
+    },
+    "primaryCallToActionBgColor": {
+      "type": "string"
+    },
+    "secondaryCallToActionBgColor": {
+      "type": "string"
+    }
+  }
+}

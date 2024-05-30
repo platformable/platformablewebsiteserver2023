@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_general_whats_includeds",
+  "info": {
+    "displayName": "whatsIncluded",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "companyName": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "whatsIncludedContent": {
+      "displayName": "whatsIncludedContent",
+      "type": "component",
+      "repeatable": true,
+      "component": "general.whats-included-content"
+    }
+  }
+}

@@ -53,6 +53,12 @@
     },
     "secondaryCallToActionUrl": {
       "type": "string"
+    },
+    "primaryCallToActionBorderColor": {
+      "type": "string"
+    },
+    "secondaryCallToActionBorderColor": {
+      "type": "string"
     }
   }
 }

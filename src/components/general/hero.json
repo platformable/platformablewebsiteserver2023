@@ -41,6 +41,18 @@
     },
     "secondaryCallToActionBgColor": {
       "type": "string"
+    },
+    "BigHeadlineTextColor": {
+      "type": "string"
+    },
+    "subHeadlineTextColor": {
+      "type": "string"
+    },
+    "primaryCallToActionUrl": {
+      "type": "string"
+    },
+    "secondaryCallToActionUrl": {
+      "type": "string"
     }
   }
 }

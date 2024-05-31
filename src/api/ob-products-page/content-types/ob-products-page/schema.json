@@ -54,6 +54,9 @@
       "type": "component",
       "repeatable": true,
       "component": "general.testimonials"
+    },
+    "benefitshHeadingColor": {
+      "type": "string"
     }
   }
 }

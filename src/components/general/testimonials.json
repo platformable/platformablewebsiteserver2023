@@ -2,7 +2,8 @@
   "collectionName": "components_general_testimonials",
   "info": {
     "displayName": "testimonials",
-    "icon": "bulletList"
+    "icon": "bulletList",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,14 +17,36 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "nameColor": {
+      "type": "string"
+    },
+    "positionColor": {
+      "type": "string"
+    },
+    "testimonialSectionBgColor": {
+      "type": "string"
+    },
+    "testimonialsCardBorderColor": {
+      "type": "string"
+    },
+    "testimonialsCardBgColor": {
+      "type": "string"
+    },
+    "testimonialsNextBackBtnBgColor": {
+      "type": "string"
     }
   }
 }

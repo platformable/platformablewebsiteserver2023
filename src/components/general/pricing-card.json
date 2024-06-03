@@ -17,6 +17,18 @@
       "type": "component",
       "repeatable": true,
       "component": "general.list-card-description"
+    },
+    "callToActionMain": {
+      "type": "string"
+    },
+    "callToActionMainUrl": {
+      "type": "string"
+    },
+    "callToActionSecondary": {
+      "type": "string"
+    },
+    "callToActionSecondaryUrl": {
+      "type": "string"
     }
   }
 }

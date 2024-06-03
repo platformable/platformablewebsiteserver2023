@@ -16,6 +16,12 @@
     "description": {
       "type": "text"
     },
+    "mainColor": {
+      "type": "text"
+    },
+    "backgroundColor": {
+      "type": "text"
+    },
     "price": {
       "displayName": "pricingCard",
       "type": "component",

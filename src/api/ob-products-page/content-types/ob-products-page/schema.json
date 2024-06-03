@@ -57,6 +57,11 @@
     },
     "benefitshHeadingColor": {
       "type": "string"
+    },
+    "pricing": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.pricing"
     }
   }
 }

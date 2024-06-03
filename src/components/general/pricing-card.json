@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_general_pricing_cards",
+  "info": {
+    "displayName": "pricingCard",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "string"
+    },
+    "discountText": {
+      "type": "string"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.list-card-description"
+    }
+  }
+}

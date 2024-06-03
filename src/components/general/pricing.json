@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_general_pricings",
+  "info": {
+    "displayName": "pricing",
+    "icon": "gift",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "displayName": "pricingCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "general.pricing-card"
+    }
+  }
+}

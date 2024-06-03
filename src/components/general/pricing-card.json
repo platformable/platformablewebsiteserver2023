@@ -24,10 +24,22 @@
     "callToActionMainUrl": {
       "type": "string"
     },
+    "callToActionMainBgColor": {
+      "type": "string"
+    },
+    "callToActionMainTextColor": {
+      "type": "string"
+    },
     "callToActionSecondary": {
       "type": "string"
     },
     "callToActionSecondaryUrl": {
+      "type": "string"
+    },
+    "callToActionSecondaryBgColor": {
+      "type": "string"
+    },
+    "callToActionSecondaryTextColor": {
       "type": "string"
     }
   }

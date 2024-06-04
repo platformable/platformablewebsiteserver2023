@@ -59,6 +59,12 @@
     },
     "secondaryCallToActionBorderColor": {
       "type": "string"
+    },
+    "socialHeading": {
+      "type": "string"
+    },
+    "socialSubheading": {
+      "type": "string"
     }
   }
 }

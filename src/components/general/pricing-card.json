@@ -41,6 +41,12 @@
     },
     "callToActionSecondaryTextColor": {
       "type": "string"
+    },
+    "callToActionMainBorderColor": {
+      "type": "string"
+    },
+    "callToActionSecondaryBorderColor": {
+      "type": "string"
     }
   }
 }

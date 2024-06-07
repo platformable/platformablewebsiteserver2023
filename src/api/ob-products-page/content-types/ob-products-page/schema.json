@@ -62,6 +62,19 @@
       "type": "component",
       "repeatable": false,
       "component": "general.pricing"
+    },
+    "featured_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "excerpt": {
+      "type": "text"
     }
   }
 }

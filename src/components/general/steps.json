@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_general_steps",
+  "info": {
+    "displayName": "steps",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "step": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

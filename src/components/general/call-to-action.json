@@ -2,7 +2,8 @@
   "collectionName": "components_general_call_to_actions",
   "info": {
     "displayName": "callToAction",
-    "icon": "car"
+    "icon": "car",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -17,6 +18,22 @@
     },
     "secondaryCallToAction": {
       "type": "string"
+    },
+    "cta_option": {
+      "displayName": "cta_options",
+      "type": "component",
+      "repeatable": true,
+      "component": "general.cta-options"
+    },
+    "cta_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

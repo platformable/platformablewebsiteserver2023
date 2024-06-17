@@ -1344,6 +1344,45 @@ export interface ApiEngageEngage extends Schema.SingleType {
   };
 }
 
+export interface ApiHomeHome extends Schema.SingleType {
+  collectionName: 'homes';
+  info: {
+    singularName: 'home';
+    pluralName: 'homes';
+    displayName: 'Home';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    hero: Attribute.Component<'general.hero', true>;
+    collaborators: Attribute.Component<'general.collaborators'>;
+    sectorHeading: Attribute.String;
+    sectorSubheading: Attribute.String;
+    sector1: Attribute.String;
+    sector2: Attribute.String;
+    sector3: Attribute.String;
+    bentoBox: Attribute.Component<'general.bento-box', true>;
+    benefitsHeading: Attribute.String;
+    howItWorksHeading: Attribute.String;
+    howItWorksSubheading: Attribute.String;
+    steps: Attribute.Component<'general.steps', true>;
+    callToAction: Attribute.Component<'general.call-to-action'>;
+    benefits: Attribute.Component<'general.benefits', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    sitemap_exclude: Attribute.Boolean &
+      Attribute.Private &
+      Attribute.DefaultTo<false>;
+  };
+}
+
 export interface ApiHomepageHomepage extends Schema.SingleType {
   collectionName: 'homepages';
   info: {
@@ -1959,6 +1998,7 @@ declare module '@strapi/types' {
       'api::data-product.data-product': ApiDataProductDataProduct;
       'api::dataset.dataset': ApiDatasetDataset;
       'api::engage.engage': ApiEngageEngage;
+      'api::home.home': ApiHomeHome;
       'api::homepage.homepage': ApiHomepageHomepage;
       'api::navigation.navigation': ApiNavigationNavigation;
       'api::ob-products-page.ob-products-page': ApiObProductsPageObProductsPage;

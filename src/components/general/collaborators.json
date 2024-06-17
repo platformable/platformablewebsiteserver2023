@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_general_collaborators",
+  "info": {
+    "displayName": "collaborators",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "collaboratorLogo": {
+      "displayName": "collaboratorLogo",
+      "type": "component",
+      "repeatable": true,
+      "component": "general.collaborator-logo"
+    }
+  }
+}

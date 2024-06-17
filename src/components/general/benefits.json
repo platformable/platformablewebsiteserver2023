@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_general_benefits",
+  "info": {
+    "displayName": "Benefits",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "benefits_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "label": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

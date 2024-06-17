@@ -1,0 +1,71 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.hero"
+    },
+    "collaborators": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.collaborators"
+    },
+    "sectorHeading": {
+      "type": "string"
+    },
+    "sectorSubheading": {
+      "type": "string"
+    },
+    "sector1": {
+      "type": "string"
+    },
+    "sector2": {
+      "type": "string"
+    },
+    "sector3": {
+      "type": "string"
+    },
+    "bentoBox": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.bento-box"
+    },
+    "benefitsHeading": {
+      "type": "string"
+    },
+    "howItWorksHeading": {
+      "type": "string"
+    },
+    "howItWorksSubheading": {
+      "type": "string"
+    },
+    "steps": {
+      "displayName": "steps",
+      "type": "component",
+      "repeatable": true,
+      "component": "general.steps"
+    },
+    "callToAction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.call-to-action"
+    },
+    "benefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.benefits"
+    }
+  }
+}

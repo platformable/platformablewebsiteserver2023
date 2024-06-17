@@ -154,6 +154,20 @@ export interface DatasetsDatasetsPruductsCard extends Schema.Component {
   };
 }
 
+export interface GeneralBenefits extends Schema.Component {
+  collectionName: 'components_general_benefits';
+  info: {
+    displayName: 'Benefits';
+    icon: 'calendar';
+  };
+  attributes: {
+    benefits_img: Attribute.Media;
+    label: Attribute.String;
+    title: Attribute.String;
+    description: Attribute.Text;
+  };
+}
+
 export interface GeneralBentoBox extends Schema.Component {
   collectionName: 'components_general_bento_boxes';
   info: {
@@ -177,12 +191,49 @@ export interface GeneralCallToAction extends Schema.Component {
   info: {
     displayName: 'callToAction';
     icon: 'car';
+    description: '';
   };
   attributes: {
     heading: Attribute.String;
     subheading: Attribute.String;
     primaryCallToAction: Attribute.String;
     secondaryCallToAction: Attribute.String;
+    cta_option: Attribute.Component<'general.cta-options', true>;
+    cta_img: Attribute.Media;
+  };
+}
+
+export interface GeneralCollaboratorLogo extends Schema.Component {
+  collectionName: 'components_general_collaborator_logos';
+  info: {
+    displayName: 'collaboratorLogo';
+    icon: 'apps';
+  };
+  attributes: {
+    collaborator_img: Attribute.Media;
+  };
+}
+
+export interface GeneralCollaborators extends Schema.Component {
+  collectionName: 'components_general_collaborators';
+  info: {
+    displayName: 'collaborators';
+    icon: 'apps';
+  };
+  attributes: {
+    heading: Attribute.String;
+    collaboratorLogo: Attribute.Component<'general.collaborator-logo', true>;
+  };
+}
+
+export interface GeneralCtaOptions extends Schema.Component {
+  collectionName: 'components_general_cta_options';
+  info: {
+    displayName: 'cta_options';
+    icon: 'bulletList';
+  };
+  attributes: {
+    option: Attribute.String;
   };
 }
 
@@ -236,6 +287,15 @@ export interface GeneralHero extends Schema.Component {
     primaryCallToActionTextColor: Attribute.String;
     secondaryCallToActionTextColor: Attribute.String;
   };
+}
+
+export interface GeneralHomeBenefits extends Schema.Component {
+  collectionName: 'components_general_home_benefits';
+  info: {
+    displayName: 'HomeBenefits';
+    icon: 'apps';
+  };
+  attributes: {};
 }
 
 export interface GeneralListCardDescription extends Schema.Component {
@@ -320,6 +380,19 @@ export interface GeneralProductCarousel extends Schema.Component {
     product_carousel_description: Attribute.Text;
     product_carousel_images: Attribute.Media;
     product_carousel_button: Attribute.String;
+  };
+}
+
+export interface GeneralSteps extends Schema.Component {
+  collectionName: 'components_general_steps';
+  info: {
+    displayName: 'steps';
+    icon: 'bulletList';
+  };
+  attributes: {
+    step: Attribute.String;
+    heading: Attribute.String;
+    description: Attribute.Text;
   };
 }
 
@@ -513,15 +586,21 @@ declare module '@strapi/types' {
       'data-governance.products': DataGovernanceProducts;
       'data-products.data-products-products-card': DataProductsDataProductsProductsCard;
       'datasets.datasets-pruducts-card': DatasetsDatasetsPruductsCard;
+      'general.benefits': GeneralBenefits;
       'general.bento-box': GeneralBentoBox;
       'general.call-to-action': GeneralCallToAction;
+      'general.collaborator-logo': GeneralCollaboratorLogo;
+      'general.collaborators': GeneralCollaborators;
+      'general.cta-options': GeneralCtaOptions;
       'general.find-more': GeneralFindMore;
       'general.hero': GeneralHero;
+      'general.home-benefits': GeneralHomeBenefits;
       'general.list-card-description': GeneralListCardDescription;
       'general.list-item-card': GeneralListItemCard;
       'general.pricing-card': GeneralPricingCard;
       'general.pricing': GeneralPricing;
       'general.product-carousel': GeneralProductCarousel;
+      'general.steps': GeneralSteps;
       'general.testimonials': GeneralTestimonials;
       'general.vertical-description-card': GeneralVerticalDescriptionCard;
       'general.whats-included-content': GeneralWhatsIncludedContent;

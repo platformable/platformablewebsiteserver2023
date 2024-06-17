@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_general_collaborator_logos",
+  "info": {
+    "displayName": "collaboratorLogo",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "collaborator_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

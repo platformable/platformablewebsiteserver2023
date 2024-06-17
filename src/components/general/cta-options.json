@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_general_cta_options",
+  "info": {
+    "displayName": "cta_options",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "option": {
+      "type": "string"
+    }
+  }
+}

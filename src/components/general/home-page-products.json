@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_general_home_page_products",
+  "info": {
+    "displayName": "HomePageProducts",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "sector": {
+      "type": "string"
+    },
+    "product": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.bento-box"
+    }
+  }
+}

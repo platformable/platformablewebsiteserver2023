@@ -183,6 +183,9 @@ export interface GeneralBentoBox extends Schema.Component {
     mainColor: Attribute.String;
     textColor: Attribute.String;
     backgroundColor: Attribute.String;
+    column: Attribute.String & Attribute.DefaultTo<'col-span-'>;
+    item: Attribute.Blocks;
+    getStarted: Attribute.String;
   };
 }
 
@@ -296,6 +299,18 @@ export interface GeneralHomeBenefits extends Schema.Component {
     icon: 'apps';
   };
   attributes: {};
+}
+
+export interface GeneralHomePageProducts extends Schema.Component {
+  collectionName: 'components_general_home_page_products';
+  info: {
+    displayName: 'HomePageProducts';
+    icon: 'bulletList';
+  };
+  attributes: {
+    sector: Attribute.String;
+    product: Attribute.Component<'general.bento-box', true>;
+  };
 }
 
 export interface GeneralListCardDescription extends Schema.Component {
@@ -595,6 +610,7 @@ declare module '@strapi/types' {
       'general.find-more': GeneralFindMore;
       'general.hero': GeneralHero;
       'general.home-benefits': GeneralHomeBenefits;
+      'general.home-page-products': GeneralHomePageProducts;
       'general.list-card-description': GeneralListCardDescription;
       'general.list-item-card': GeneralListItemCard;
       'general.pricing-card': GeneralPricingCard;

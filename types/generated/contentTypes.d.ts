@@ -1370,6 +1370,7 @@ export interface ApiHomeHome extends Schema.SingleType {
     personaCases: Attribute.Component<'general.bento-box', true>;
     personaHeading: Attribute.String;
     personaSubheading: Attribute.String;
+    featured_img: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

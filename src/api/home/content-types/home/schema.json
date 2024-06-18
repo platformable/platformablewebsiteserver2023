@@ -63,6 +63,12 @@
       "type": "component",
       "repeatable": true,
       "component": "general.bento-box"
+    },
+    "personaHeading": {
+      "type": "string"
+    },
+    "personaSubheading": {
+      "type": "string"
     }
   }
 }

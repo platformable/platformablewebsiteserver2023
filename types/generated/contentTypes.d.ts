@@ -1368,6 +1368,8 @@ export interface ApiHomeHome extends Schema.SingleType {
     benefits: Attribute.Component<'general.benefits', true>;
     products: Attribute.Component<'general.home-page-products', true>;
     personaCases: Attribute.Component<'general.bento-box', true>;
+    personaHeading: Attribute.String;
+    personaSubheading: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

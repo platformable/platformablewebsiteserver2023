@@ -35,6 +35,16 @@
     },
     "backgroundColor": {
       "type": "string"
+    },
+    "column": {
+      "type": "string",
+      "default": "col-span-"
+    },
+    "item": {
+      "type": "blocks"
+    },
+    "getStarted": {
+      "type": "string"
     }
   }
 }

@@ -28,20 +28,6 @@
     "sectorSubheading": {
       "type": "string"
     },
-    "sector1": {
-      "type": "string"
-    },
-    "sector2": {
-      "type": "string"
-    },
-    "sector3": {
-      "type": "string"
-    },
-    "bentoBox": {
-      "type": "component",
-      "repeatable": true,
-      "component": "general.bento-box"
-    },
     "benefitsHeading": {
       "type": "string"
     },
@@ -66,6 +52,17 @@
       "type": "component",
       "repeatable": true,
       "component": "general.benefits"
+    },
+    "products": {
+      "displayName": "HomePageProducts",
+      "type": "component",
+      "repeatable": true,
+      "component": "general.home-page-products"
+    },
+    "persona": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.bento-box"
     }
   }
 }

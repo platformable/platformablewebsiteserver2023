@@ -1367,7 +1367,7 @@ export interface ApiHomeHome extends Schema.SingleType {
     callToAction: Attribute.Component<'general.call-to-action'>;
     benefits: Attribute.Component<'general.benefits', true>;
     products: Attribute.Component<'general.home-page-products', true>;
-    persona: Attribute.Component<'general.bento-box', true>;
+    personaCases: Attribute.Component<'general.bento-box', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

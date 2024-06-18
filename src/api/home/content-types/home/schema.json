@@ -59,7 +59,7 @@
       "repeatable": true,
       "component": "general.home-page-products"
     },
-    "persona": {
+    "personaCases": {
       "type": "component",
       "repeatable": true,
       "component": "general.bento-box"

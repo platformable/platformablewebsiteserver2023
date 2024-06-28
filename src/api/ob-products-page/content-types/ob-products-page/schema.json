@@ -64,17 +64,27 @@
       "component": "general.pricing"
     },
     "featured_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "excerpt": {
       "type": "text"
+    },
+    "sector": {
+      "type": "enumeration",
+      "enum": [
+        "OB",
+        "OH",
+        "OE"
+      ],
+      "default": "OB"
     }
   }
 }

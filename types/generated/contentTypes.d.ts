@@ -1518,6 +1518,8 @@ export interface ApiObProductsPageObProductsPage extends Schema.CollectionType {
     pricing: Attribute.Component<'general.pricing'>;
     featured_img: Attribute.Media;
     excerpt: Attribute.Text;
+    sector: Attribute.Enumeration<['OB', 'OH', 'OE']> &
+      Attribute.DefaultTo<'OB'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

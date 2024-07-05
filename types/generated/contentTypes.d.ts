@@ -1371,6 +1371,7 @@ export interface ApiHomeHome extends Schema.SingleType {
     personaHeading: Attribute.String;
     personaSubheading: Attribute.String;
     featured_img: Attribute.Media;
+    excerpt: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

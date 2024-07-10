@@ -13,6 +13,9 @@
     "discountText": {
       "type": "string"
     },
+    "billingFrequency": {
+      "type": "string"
+    },
     "description": {
       "type": "component",
       "repeatable": true,

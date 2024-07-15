@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "meet_an_experts",
+  "info": {
+    "singularName": "meet-an-expert",
+    "pluralName": "meet-an-experts",
+    "displayName": "MeetAnExpert",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.hero-expert"
+    },
+    "collaborators": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.collaborator-logo"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.testimonials"
+    }
+  }
+}

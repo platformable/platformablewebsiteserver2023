@@ -229,6 +229,20 @@ export interface GeneralCollaborators extends Schema.Component {
   };
 }
 
+export interface GeneralContacOptions extends Schema.Component {
+  collectionName: 'components_general_contac_options';
+  info: {
+    displayName: 'contactOptions';
+    icon: 'bulletList';
+    description: '';
+  };
+  attributes: {
+    label: Attribute.String;
+    description: Attribute.Text;
+    buttonText: Attribute.String;
+  };
+}
+
 export interface GeneralCtaOptions extends Schema.Component {
   collectionName: 'components_general_cta_options';
   info: {
@@ -259,6 +273,20 @@ export interface GeneralFindMore extends Schema.Component {
       >;
     image: Attribute.Media;
     link: Attribute.String;
+  };
+}
+
+export interface GeneralHeroExpert extends Schema.Component {
+  collectionName: 'components_general_hero_experts';
+  info: {
+    displayName: 'heroExpert';
+    icon: 'bulletList';
+  };
+  attributes: {
+    smallHeadline: Attribute.String;
+    headline: Attribute.Text;
+    options: Attribute.Component<'general.cta-options', true>;
+    calendly: Attribute.Boolean & Attribute.DefaultTo<true>;
   };
 }
 
@@ -342,6 +370,19 @@ export interface GeneralListItemCard extends Schema.Component {
   };
 }
 
+export interface GeneralPartnerType extends Schema.Component {
+  collectionName: 'components_general_partner_types';
+  info: {
+    displayName: 'partnerType';
+    icon: 'bulletList';
+  };
+  attributes: {
+    label: Attribute.String;
+    heading: Attribute.String;
+    description: Attribute.Text;
+  };
+}
+
 export interface GeneralPricingCard extends Schema.Component {
   collectionName: 'components_general_pricing_cards';
   info: {
@@ -352,6 +393,7 @@ export interface GeneralPricingCard extends Schema.Component {
   attributes: {
     price: Attribute.String;
     discountText: Attribute.String;
+    billingFrequency: Attribute.String;
     description: Attribute.Component<'general.list-card-description', true>;
     callToActionMain: Attribute.String;
     callToActionMainUrl: Attribute.String;
@@ -606,13 +648,16 @@ declare module '@strapi/types' {
       'general.call-to-action': GeneralCallToAction;
       'general.collaborator-logo': GeneralCollaboratorLogo;
       'general.collaborators': GeneralCollaborators;
+      'general.contac-options': GeneralContacOptions;
       'general.cta-options': GeneralCtaOptions;
       'general.find-more': GeneralFindMore;
+      'general.hero-expert': GeneralHeroExpert;
       'general.hero': GeneralHero;
       'general.home-benefits': GeneralHomeBenefits;
       'general.home-page-products': GeneralHomePageProducts;
       'general.list-card-description': GeneralListCardDescription;
       'general.list-item-card': GeneralListItemCard;
+      'general.partner-type': GeneralPartnerType;
       'general.pricing-card': GeneralPricingCard;
       'general.pricing': GeneralPricing;
       'general.product-carousel': GeneralProductCarousel;

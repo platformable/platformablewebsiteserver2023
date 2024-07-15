@@ -376,11 +376,13 @@ export interface GeneralPartnerType extends Schema.Component {
   info: {
     displayName: 'partnerType';
     icon: 'bulletList';
+    description: '';
   };
   attributes: {
     label: Attribute.String;
     heading: Attribute.String;
     description: Attribute.Text;
+    options: Attribute.Component<'general.cta-options', true>;
   };
 }
 

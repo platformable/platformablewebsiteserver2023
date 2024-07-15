@@ -27,11 +27,6 @@
       "repeatable": true,
       "component": "general.partner-type"
     },
-    "options": {
-      "type": "component",
-      "repeatable": true,
-      "component": "general.cta-options"
-    },
     "hero": {
       "type": "component",
       "repeatable": false,

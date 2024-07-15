@@ -1015,7 +1015,6 @@ export interface ApiBecomePartnerBecomePartner extends Schema.SingleType {
     headline: Attribute.String;
     description: Attribute.Text;
     partnerType: Attribute.Component<'general.partner-type', true>;
-    options: Attribute.Component<'general.cta-options', true>;
     hero: Attribute.Component<'general.hero-expert'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;

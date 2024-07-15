@@ -15,6 +15,9 @@
     },
     "buttonText": {
       "type": "string"
+    },
+    "clickHereUrl": {
+      "type": "string"
     }
   }
 }

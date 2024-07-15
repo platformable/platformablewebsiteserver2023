@@ -999,6 +999,45 @@ export interface ApiApiGovernanceApiGovernance extends Schema.SingleType {
   };
 }
 
+export interface ApiBecomePartnerBecomePartner extends Schema.SingleType {
+  collectionName: 'become_partners';
+  info: {
+    singularName: 'become-partner';
+    pluralName: 'become-partners';
+    displayName: 'BecomePartner';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    subheadline: Attribute.String;
+    headline: Attribute.String;
+    description: Attribute.Text;
+    partnerType: Attribute.Component<'general.partner-type', true>;
+    options: Attribute.Component<'general.cta-options', true>;
+    hero: Attribute.Component<'general.hero-expert'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::become-partner.become-partner',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::become-partner.become-partner',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    sitemap_exclude: Attribute.Boolean &
+      Attribute.Private &
+      Attribute.DefaultTo<false>;
+  };
+}
+
 export interface ApiCategoryCategory extends Schema.CollectionType {
   collectionName: 'categories';
   info: {
@@ -1023,6 +1062,42 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::category.category',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    sitemap_exclude: Attribute.Boolean &
+      Attribute.Private &
+      Attribute.DefaultTo<false>;
+  };
+}
+
+export interface ApiContactContact extends Schema.SingleType {
+  collectionName: 'contacts';
+  info: {
+    singularName: 'contact';
+    pluralName: 'contacts';
+    displayName: 'Contact';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    hero: Attribute.Component<'general.hero'>;
+    contactOptions: Attribute.Component<'general.contac-options', true>;
+    collaborators: Attribute.Component<'general.collaborator-logo', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::contact.contact',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::contact.contact',
       'oneToOne',
       'admin::user'
     > &
@@ -1438,6 +1513,42 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::homepage.homepage',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    sitemap_exclude: Attribute.Boolean &
+      Attribute.Private &
+      Attribute.DefaultTo<false>;
+  };
+}
+
+export interface ApiMeetAnExpertMeetAnExpert extends Schema.SingleType {
+  collectionName: 'meet_an_experts';
+  info: {
+    singularName: 'meet-an-expert';
+    pluralName: 'meet-an-experts';
+    displayName: 'MeetAnExpert';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    hero: Attribute.Component<'general.hero-expert'>;
+    collaborators: Attribute.Component<'general.collaborator-logo', true>;
+    testimonials: Attribute.Component<'general.testimonials', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::meet-an-expert.meet-an-expert',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::meet-an-expert.meet-an-expert',
       'oneToOne',
       'admin::user'
     > &
@@ -1997,13 +2108,16 @@ declare module '@strapi/types' {
       'api::about.about': ApiAboutAbout;
       'api::act.act': ApiActAct;
       'api::api-governance.api-governance': ApiApiGovernanceApiGovernance;
+      'api::become-partner.become-partner': ApiBecomePartnerBecomePartner;
       'api::category.category': ApiCategoryCategory;
+      'api::contact.contact': ApiContactContact;
       'api::data-governance.data-governance': ApiDataGovernanceDataGovernance;
       'api::data-product.data-product': ApiDataProductDataProduct;
       'api::dataset.dataset': ApiDatasetDataset;
       'api::engage.engage': ApiEngageEngage;
       'api::home.home': ApiHomeHome;
       'api::homepage.homepage': ApiHomepageHomepage;
+      'api::meet-an-expert.meet-an-expert': ApiMeetAnExpertMeetAnExpert;
       'api::navigation.navigation': ApiNavigationNavigation;
       'api::ob-products-page.ob-products-page': ApiObProductsPageObProductsPage;
       'api::open-ecosystem.open-ecosystem': ApiOpenEcosystemOpenEcosystem;

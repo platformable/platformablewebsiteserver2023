@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "become_partners",
+  "info": {
+    "singularName": "become-partner",
+    "pluralName": "become-partners",
+    "displayName": "BecomePartner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subheadline": {
+      "type": "string"
+    },
+    "headline": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "partnerType": {
+      "displayName": "partnerType",
+      "type": "component",
+      "repeatable": true,
+      "component": "general.partner-type"
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.cta-options"
+    },
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.hero-expert"
+    }
+  }
+}

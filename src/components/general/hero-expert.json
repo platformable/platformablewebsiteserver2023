@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_general_hero_experts",
+  "info": {
+    "displayName": "heroExpert",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "smallHeadline": {
+      "type": "string"
+    },
+    "headline": {
+      "type": "text"
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.cta-options"
+    },
+    "calendly": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

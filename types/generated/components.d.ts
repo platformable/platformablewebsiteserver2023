@@ -240,6 +240,7 @@ export interface GeneralContacOptions extends Schema.Component {
     label: Attribute.String;
     description: Attribute.Text;
     buttonText: Attribute.String;
+    clickHereUrl: Attribute.String;
   };
 }
 

@@ -1016,6 +1016,8 @@ export interface ApiBecomePartnerBecomePartner extends Schema.SingleType {
     description: Attribute.Text;
     partnerType: Attribute.Component<'general.partner-type', true>;
     hero: Attribute.Component<'general.hero-expert'>;
+    excerpt: Attribute.Text;
+    featured_img: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1086,6 +1088,8 @@ export interface ApiContactContact extends Schema.SingleType {
     hero: Attribute.Component<'general.hero'>;
     contactOptions: Attribute.Component<'general.contac-options', true>;
     collaborators: Attribute.Component<'general.collaborator-logo', true>;
+    excerpt: Attribute.Text;
+    featured_img: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1418,6 +1422,48 @@ export interface ApiEngageEngage extends Schema.SingleType {
   };
 }
 
+export interface ApiHelpCenterHelpCenter extends Schema.CollectionType {
+  collectionName: 'help_centers';
+  info: {
+    singularName: 'help-center';
+    pluralName: 'help-centers';
+    displayName: 'Help Center';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    content: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'toolbar';
+        }
+      >;
+    featured_img: Attribute.Media;
+    excerpt: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::help-center.help-center',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::help-center.help-center',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    sitemap_exclude: Attribute.Boolean &
+      Attribute.Private &
+      Attribute.DefaultTo<false>;
+  };
+}
+
 export interface ApiHomeHome extends Schema.SingleType {
   collectionName: 'homes';
   info: {
@@ -1537,6 +1583,8 @@ export interface ApiMeetAnExpertMeetAnExpert extends Schema.SingleType {
     hero: Attribute.Component<'general.hero-expert'>;
     collaborators: Attribute.Component<'general.collaborator-logo', true>;
     testimonials: Attribute.Component<'general.testimonials', true>;
+    excerpt: Attribute.Text;
+    featured_img: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -2114,6 +2162,7 @@ declare module '@strapi/types' {
       'api::data-product.data-product': ApiDataProductDataProduct;
       'api::dataset.dataset': ApiDatasetDataset;
       'api::engage.engage': ApiEngageEngage;
+      'api::help-center.help-center': ApiHelpCenterHelpCenter;
       'api::home.home': ApiHomeHome;
       'api::homepage.homepage': ApiHomepageHomepage;
       'api::meet-an-expert.meet-an-expert': ApiMeetAnExpertMeetAnExpert;

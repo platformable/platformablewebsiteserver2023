@@ -26,6 +26,19 @@
       "type": "component",
       "repeatable": true,
       "component": "general.collaborator-logo"
+    },
+    "excerpt": {
+      "type": "text"
+    },
+    "featured_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

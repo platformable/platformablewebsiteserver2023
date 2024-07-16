@@ -31,6 +31,19 @@
       "type": "component",
       "repeatable": false,
       "component": "general.hero-expert"
+    },
+    "excerpt": {
+      "type": "text"
+    },
+    "featured_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

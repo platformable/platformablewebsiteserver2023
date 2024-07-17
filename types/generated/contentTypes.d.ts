@@ -1428,6 +1428,7 @@ export interface ApiHelpCenterHelpCenter extends Schema.CollectionType {
     singularName: 'help-center';
     pluralName: 'help-centers';
     displayName: 'Help Center';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1443,6 +1444,7 @@ export interface ApiHelpCenterHelpCenter extends Schema.CollectionType {
       >;
     featured_img: Attribute.Media;
     excerpt: Attribute.Text;
+    slug: Attribute.UID<'api::help-center.help-center', 'title'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

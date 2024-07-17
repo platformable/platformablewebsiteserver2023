@@ -4,7 +4,8 @@
   "info": {
     "singularName": "help-center",
     "pluralName": "help-centers",
-    "displayName": "Help Center"
+    "displayName": "Help Center",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,17 +23,22 @@
       "customField": "plugin::ckeditor5.CKEditor"
     },
     "featured_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "excerpt": {
       "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }

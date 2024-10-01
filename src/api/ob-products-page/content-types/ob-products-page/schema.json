@@ -82,7 +82,8 @@
       "enum": [
         "OB",
         "OH",
-        "OE"
+        "OE",
+        "TR"
       ],
       "default": "OB"
     }
